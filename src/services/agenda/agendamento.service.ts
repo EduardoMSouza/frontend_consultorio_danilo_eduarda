@@ -156,4 +156,14 @@ export class AgendamentoService {
         });
         if (!response.ok) throw new Error('Erro ao marcar lembrete como enviado');
     }
+
+    static async listarPorPeriodoEDentista(
+        dataInicio: string,
+        dataFim: string,
+        dentistaId: number
+    ): Promise<AgendamentoResponse[]> {
+        // reutiliza o método já existente
+        const todos = await this.listarPorPeriodo(dataInicio, dataFim);
+        return todos.filter(a => a.dentistaId === dentistaId);
+    }
 }
