@@ -53,7 +53,7 @@ const menuItems: MenuItem[] = [
         label: "Agenda",
         icon: Calendar,
         href: "/agenda",
-        badge: 5,
+        //badge: 5,
         color: "text-green-500"
     },
     {
@@ -64,38 +64,30 @@ const menuItems: MenuItem[] = [
         color: "text-purple-500"
     },
     {
-        id: "evolucao",
-        label: "Evolução",
-        icon: Activity,
-        color: "text-amber-500",
-        subItems: [
-            { label: "Histórico", href: "/evolucao/historico" },
-            { label: "Próximas", href: "/evolucao/proximas", badge: 3 },
-            { label: "Exames", href: "/evolucao/exames" }
-        ]
+        id: "evolucoes-tratamento",
+        label: "Evolucoes Tratamentos",
+        icon: Users,
+        href: "/evolucoes-tratamento",
+        color: "text-purple-500"
     },
     {
-        id: "tratamento",
-        label: "Tratamentos",
-        icon: Stethoscope,
-        color: "text-cyan-500",
-        subItems: [
-            { label: "Andamento", href: "/tratamento/andamento", badge: 2 },
-            { label: "Concluídos", href: "/tratamento/concluidos" },
-            { label: "Orçamentos", href: "/tratamento/orcamentos" }
-        ]
+        id: "Planos Dentais",
+        label: "Planos Dentais",
+        icon: Users,
+        href: "/planos-dentais",
+        color: "text-purple-500"
     },
-    {
-        id: "plano-dental",
-        label: "Planos",
-        icon: CreditCard,
-        color: "text-pink-500",
-        subItems: [
-            { label: "Coberturas", href: "/plano/coberturas" },
-            { label: "Autorizações", href: "/plano/autorizacoes" },
-            { label: "Convênios", href: "/plano/convenios" }
-        ]
-    },
+    //{
+    //         id: "evolucao",
+    //         label: "Evolução",
+    //         icon: Activity,
+    //         color: "text-amber-500",
+    //         subItems: [
+    //             { label: "Histórico", href: "/evolucao/historico" },
+    //             { label: "Próximas", href: "/evolucao/proximas", badge: 3 },
+    //             { label: "Exames", href: "/evolucao/exames" }
+    //         ]
+    //     },
     {
         id: "dentista",
         label: "Dentistas",
@@ -104,27 +96,11 @@ const menuItems: MenuItem[] = [
         color: "text-indigo-500"
     },
     {
-        id: "estoque",
-        label: "Estoque",
-        icon: Package,
-        href: "/estoque",
-        color: "text-orange-500",
-        subItems: [
-            { label: "Produtos", href: "/estoque/produtos" },
-            { label: "Medicamentos", href: "/estoque/medicamentos" },
-            { label: "Fornecedores", href: "/estoque/fornecedores" }
-        ]
-    },
-    {
-        id: "financeiro",
-        label: "Financeiro",
-        icon: BarChart3,
-        color: "text-emerald-500",
-        subItems: [
-            { label: "Contas a Pagar", href: "/financeiro/pagar" },
-            { label: "Contas a Receber", href: "/financeiro/receber" },
-            { label: "Relatórios", href: "/financeiro/relatorios" }
-        ]
+        id: "users",
+        label: "Usuarios",
+        icon: Users,
+        href: "/users",
+        color: "text-purple-500"
     },
     {
         id: "configuracoes",
@@ -390,4 +366,4 @@ export default function Sidebar({ isCollapsed, onCollapseChange }: SidebarProps)
             )}
         </>
     )
-}285
+}

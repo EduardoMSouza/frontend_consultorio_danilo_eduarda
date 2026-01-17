@@ -1,5 +1,7 @@
 // services/agendamento-historico.service.ts
-import { AgendamentoHistoricoResponse, TipoAcao } from '@/models/agendamento-historico.type';
+
+
+import {AgendamentoHistoricoResponse, TipoAcao} from "@/models/agenda/agendamento-historico.type";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 

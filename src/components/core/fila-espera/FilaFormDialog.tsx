@@ -1,11 +1,11 @@
-// components/fila-espera/FilaFormDialog.tsx
+// components/fila-espera-espera/FilaFormDialog.tsx
 import { DialogContent, DialogHeader, DialogTitle } from "@/components/ui-shadcn/dialog"
 import { Button } from "@/components/ui-shadcn/button"
 import { Input } from "@/components/ui-shadcn/input"
 import { Label } from "@/components/ui-shadcn/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui-shadcn/select"
 import { Switch } from "@/components/ui-shadcn/switch"
-import { TipoProcedimento, getTipoProcedimentoLabel } from "@/models/fila-espera.model"
+import { TipoProcedimento, getTipoProcedimentoLabel } from "@/models/fila-espera-espera.model"
 
 interface FilaFormDialogProps {
     showAddDialog: boolean

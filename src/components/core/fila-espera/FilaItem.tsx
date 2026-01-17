@@ -1,4 +1,4 @@
-// components/fila-espera/FilaItem.tsx
+// components/fila-espera-espera/FilaItem.tsx
 import {Button} from "@/components/ui-shadcn/button"
 import {Badge} from "@/components/ui-shadcn/badge"
 import {
@@ -18,7 +18,7 @@ import {
     getStatusFilaLabel,
     getTipoProcedimentoLabel,
     StatusFila
-} from "@/models/fila-espera.model"
+} from "@/models/fila-espera-espera.model"
 import {ArrowUpCircle, Bell, Calendar, Clock, Phone, User, XCircle} from "lucide-react"
 
 interface FilaItemProps {

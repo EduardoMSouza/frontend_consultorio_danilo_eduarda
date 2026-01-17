@@ -1,11 +1,11 @@
-// components/fila-espera/FilaLista.tsx
+// components/fila-espera-espera/FilaLista.tsx
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui-shadcn/card"
 import { Alert, AlertDescription } from "@/components/ui-shadcn/alert"
 import { Button } from "@/components/ui-shadcn/button"
 import { Skeleton } from "@/components/ui-shadcn/skeleton"
 import { AlertCircle, Plus, Users } from "lucide-react"
 import { FilaItem } from "./FilaItem"
-import {StatusFila, StatusFilaLabels} from "@/models/fila-espera.model"
+import {StatusFila, StatusFilaLabels} from "@/models/fila-espera-espera.model"
 
 interface FilaListaProps {
     filteredFilas: any[]
@@ -82,7 +82,7 @@ export function FilaLista({
                         <p className="text-muted-foreground mb-6">
                             {searchTerm || filterStatus !== "TODOS" || filterPriority !== "TODOS"
                                 ? "Tente ajustar seus filtros de busca"
-                                : "Adicione pacientes à fila para começar"}
+                                : "Adicione pacientes à fila-espera para começar"}
                         </p>
                         {!searchTerm && filterStatus === "TODOS" && filterPriority === "TODOS" && (
                             <Button onClick={onShowAddDialog}>

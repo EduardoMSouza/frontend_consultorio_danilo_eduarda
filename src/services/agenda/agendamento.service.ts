@@ -1,9 +1,6 @@
 // services/agendamento.service.ts
-import {
-    AgendamentoRequest,
-    AgendamentoResponse,
-    StatusAgendamento,
-} from '@/models/agendamento.type';
+
+import {AgendamentoRequest, AgendamentoResponse, StatusAgendamento} from "@/models/agenda/agendamento.type";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 

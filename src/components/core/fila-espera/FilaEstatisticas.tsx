@@ -1,4 +1,4 @@
-// components/fila-espera/FilaEstatisticas.tsx
+// components/fila-espera-espera/FilaEstatisticas.tsx
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui-shadcn/card"
 import { Users, Bell, CheckCircle2, Clock } from "lucide-react"
 
@@ -38,7 +38,7 @@ export function FilaEstatisticas({ statistics }: FilaEstatisticasProps) {
             title: "Tempo Médio",
             value: `${statistics.tempoMedio} dias`,
             icon: Clock,
-            description: "Na fila de espera",
+            description: "Na fila-espera de espera",
             color: "text-purple-600"
         },
     ]

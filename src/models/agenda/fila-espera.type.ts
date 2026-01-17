@@ -1,5 +1,5 @@
-// models/fila-espera.model.ts
-import {TipoProcedimento} from "@/models/agendamento.type";
+// models/fila-espera-espera.model.ts
+import {TipoProcedimento} from "@/models/agenda/agendamento.type";
 
 export enum StatusFila {
     AGUARDANDO = 'AGUARDANDO',

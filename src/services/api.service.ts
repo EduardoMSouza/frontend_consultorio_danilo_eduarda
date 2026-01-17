@@ -66,7 +66,7 @@ api.interceptors.response.use(
         // Se for erro 401 e não for uma tentativa de refresh
         if (error.response?.status === 401 && !originalRequest._retry) {
             if (isRefreshing) {
-                // Se já está fazendo refresh, coloca na fila
+                // Se já está fazendo refresh, coloca na fila-espera
                 return new Promise((resolve, reject) => {
                     failedQueue.push({ resolve, reject });
                 })
@@ -93,7 +93,7 @@ api.interceptors.response.use(
                 // Atualiza o header da requisição original
                 originalRequest.headers['Authorization'] = `Bearer ${newTokens.accessToken}`;
 
-                // Processa a fila de requisições falhas
+                // Processa a fila-espera de requisições falhas
                 processQueue(null, newTokens.accessToken);
 
                 // Reexecuta a requisição original

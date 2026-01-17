@@ -1,4 +1,4 @@
-// components/fila-espera/FilaFiltros.tsx
+// components/fila-espera-espera/FilaFiltros.tsx
 import { Button } from "@/components/ui-shadcn/button"
 import { Input } from "@/components/ui-shadcn/input"
 import {
@@ -9,7 +9,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui-shadcn/dropdown-menu"
 import { Search, Filter, AlertTriangle } from "lucide-react"
-import { StatusFila, StatusFilaLabels } from "@/models/fila-espera.model"
+import { StatusFila, StatusFilaLabels } from "@/models/fila-espera-espera.model"
 
 interface FilaFiltrosProps {
     searchTerm: string

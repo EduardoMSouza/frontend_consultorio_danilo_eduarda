@@ -1,9 +1,7 @@
 // services/fila-espera-espera.service.ts
-import {
-    FilaEsperaRequest,
-    FilaEsperaResponse,
-    StatusFila,
-} from '@/models/fila-espera-espera.type';
+
+
+import {FilaEsperaRequest, FilaEsperaResponse, StatusFila} from "@/models/agenda/fila-espera.type";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 

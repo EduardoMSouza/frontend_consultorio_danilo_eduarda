@@ -1,7 +1,7 @@
 // models/agendamento-historico.model.ts
 
 
-import {StatusAgendamento} from "@/models/agendamento.type";
+import {StatusAgendamento} from "@/models/agenda/agendamento.type";
 
 export enum TipoAcao {
     CRIACAO = 'CRIACAO',

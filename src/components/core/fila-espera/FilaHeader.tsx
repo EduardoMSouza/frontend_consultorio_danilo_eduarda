@@ -1,4 +1,4 @@
-// components/fila-espera/FilaHeader.tsx
+// components/fila-espera-espera/FilaHeader.tsx
 import { Button } from "@/components/ui-shadcn/button"
 import { Plus } from "lucide-react"
 import { Dialog, DialogTrigger } from "@/components/ui-shadcn/dialog"
